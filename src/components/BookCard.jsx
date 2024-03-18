@@ -3,11 +3,11 @@ import { FaHeart } from "react-icons/fa";
 
 import styles from "./BookCard.module.css";
 
-function BookCard({ data, handleLikeList }) {
+function BookCard({ data, handleLikedList }) {
   const { title, author, image, language, pages } = data;
   const [like, setlike] = useState(false);
   const likeHandler = () => {
-    handleLikeList(data, like);
+    handleLikedList(data, like);
     setlike((like) => !like);
   };
   return (
