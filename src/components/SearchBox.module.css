@@ -24,3 +24,9 @@
   color: #e0e0e0;
   cursor: pointer;
 }
+@media (min-width:320px) and (max-width:500px){
+  .search{
+    display: flex;
+    justify-content: space-around;
+  }
+}
